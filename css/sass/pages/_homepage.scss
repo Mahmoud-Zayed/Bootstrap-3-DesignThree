@@ -1,0 +1,130 @@
+/* Start About Section */
+.about {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    .img {
+        background-image: url("../images/work-1.jpg");
+        height: 497px;
+        background-size: cover;
+        position: relative;
+        margin-bottom: 4%;
+        p {
+            font-family: 'Roboto Condensed', sans-serif;
+            position: absolute;
+            margin: 0;
+            padding: 10px;
+            bottom: 0;
+            color: #eee;
+            background: rgba($color: #000000, $alpha: 0.5);
+            line-height: 1.6;
+            width: 100%;
+            span {
+                font-style: italic;
+            }
+        }
+    }
+    .lor {
+        img {
+            width: 100%;
+            margin-bottom: 5.8%;
+        }
+        p {
+            margin-top: 10px;
+            color: #666;
+            font-weight: 600;
+            @media (max-width: 991px) {
+                margin-top: -20px;
+            }
+            @media (max-width: 500px) {
+                margin-top: -10px;
+            }
+        }
+        span {
+            color: #888;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+    }
+   
+    
+}
+/* End About Section */
+
+/* Start Service Section */ 
+.service {
+    width: 100%;
+    height: 350px;
+    background-image: url('../images/intro.jpg');
+    background-attachment: fixed;
+    margin: 10px 0;
+    background-size: cover;
+    position: relative;
+    p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 4px solid #fff;
+        color: #fff;
+        font-size: 20px;
+        padding: 15px;
+        font-weight: bold;
+    }
+}
+/* End Service Section */ 
+
+/* Start Product Section */
+.product {
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+}
+.product img {
+    width: 100%;
+    height: 250px;
+    margin: 10px 0;
+    @include prefixer(box-shadow, 1px 1px 1px #555, webkit moz o ms);
+}
+/* End Product Section */
+
+/* Start Choose Section */
+.choose {
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    padding: 70px 0;
+    background: #f5f5f5;
+    .clear {
+        @media (max-width: 991px) {
+            clear: both;
+        }
+    }
+    i {
+        float: left;
+        position: relative;
+        top: 32px;
+        margin-right: 10px;
+    }
+    .part {
+        float: left;
+        width: 70%;
+        margin: 20px 0;
+        h2, p {
+            margin: 0;
+        }
+        p {
+            color: #777;
+            font-size: 19px;
+        }
+        h2 {
+            color: $mainColor;
+            font-weight: bold;
+            font-size: 1.6em;
+            padding: 10px 0;
+        }
+    }
+}
+/* End Choose Section */
+

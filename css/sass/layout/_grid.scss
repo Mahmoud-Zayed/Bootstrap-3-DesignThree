@@ -1,0 +1,12 @@
+* {
+    @include prefixer(box-sizing, border-box, webkit moz o ms);
+}
+
+.contoiner {
+    width: 85%;
+    margin: auto;
+}
+
+.clearfix {
+    clear: both;
+}

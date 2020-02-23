@@ -1,0 +1,42 @@
+/* Start Navbar */ 
+.navbar-default {
+    background: #ffffff !important;
+    border: none;
+    margin: 0;
+    padding: 11px 0;
+    .navbar-brand {
+        font-family: 'Kaushan Script', cursive;
+        font-size: $mainFontSize + 6;
+        color: $mainColor;
+        font-weight: bold;
+        text-transform: uppercase;
+        &:hover,
+        &:focus {
+            color: $mainColor;
+        }
+    }
+    .navbar-nav>li>a {
+        color: #111;
+        font-size: $mainFontSize;
+        text-transform: uppercase;
+        font-family: 'Roboto Condensed', sans-serif;
+        @extend %transition;
+        &:hover {
+            color: $mainColor;
+            font-weight: 600;
+        }
+        @media (max-width: 767px) {
+            margin: 10px 20px;
+        }
+    }
+    .navbar-collapse, .navbar-default .navbar-form {
+        border: none;
+    }
+    .navbar-toggle {
+        &:hover,
+        &:focus {
+            background-color: #fff;
+        }
+    }
+}
+/* End Navbar */ 
